@@ -52,3 +52,10 @@ npm run lint:f
 //or use just formater 
 npm run format
 ```
+
+## Files structure and proccessing
+
+So how does this project work? I want to explain to you first what are the components of the project and then explain to you how the requests are processed.
+First of all, there is a src/index.ts file. This is the main server file that runs the project
+
+When sending a request to the server in this form cat/500/400, the request first passes through src/middleware/validParams.ts to ensure that the parameters are valid to complete the process, and then passes through src/middleware/fileExists.ts to make sure that the image already exists in the required size and saved in src/model/Image.ts file on array data and thumbnail, then the image is returned or the request is completed to the controller, and when the request reaches this point, the image is resized and saved to the server, then the resized image is returned
