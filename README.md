@@ -23,7 +23,7 @@ npm run start:p
 ```
 ## Usage
 
-In order to use this cat, you must pass the name of the animal, and that name must be a [ dog, cat, deer ], and then write the required width and height of the image
+In order to use this api, you must pass the name of the animal, and that name must be a [ dog, cat, deer ], and then write the required width and height of the image
 ```bash
  http://localhost:3000/{name}/{width}/{height} 
 
