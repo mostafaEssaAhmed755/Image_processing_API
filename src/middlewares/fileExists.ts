@@ -4,7 +4,7 @@ import path from 'path'
 
 const ImagesPath = path.join(__dirname, '..', '..', 'assets', 'images')
 
-const fileExists = (req: Request, res: Response, next: NextFunction) => {
+const fileExists = (req: Request, res: Response, next: NextFunction): void => {
   const name = req.params.name,
     width = parseInt(req.params.width),
     height = parseInt(req.params.height)
@@ -16,7 +16,7 @@ const handler = (
   data: { name: string; width: number; height: number },
   res: Response,
   next: NextFunction
-) => {
+): void => {
   const thumbnailName = `${data.name}_${data.width}_${data.height}`
 
   if (!ImageModel.data.includes(data.name)) {

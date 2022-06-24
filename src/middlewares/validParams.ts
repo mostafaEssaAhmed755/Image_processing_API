@@ -12,7 +12,7 @@ const handler = (
   data: { name: string; width: number; height: number },
   res: Response,
   next: NextFunction
-) => {
+): void => {
   if (!data.name || !data.width || !data.height) {
     res.status(400)
     res.json({ message: 'bad request configuration' })

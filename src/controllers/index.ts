@@ -4,7 +4,7 @@ import sharp from 'sharp'
 
 const ImagesPath = path.join(__dirname, '..', '..', 'assets', 'images')
 
-const resize = async (req: Request, res: Response) => {
+const resize = async (req: Request, res: Response): Promise<void> => {
   const name = req.params.name,
     width = parseInt(req.params.width),
     height = parseInt(req.params.height),

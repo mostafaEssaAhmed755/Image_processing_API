@@ -11,7 +11,7 @@ routes.get(
   controllers.resize
 )
 
-routes.use((req: Request, res: Response) => {
+routes.use((req: Request, res: Response): void => {
   res.status(404)
   res.json({ message: '404 not found page' })
 })
