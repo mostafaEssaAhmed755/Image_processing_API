@@ -1,5 +1,5 @@
-const data = ['cat', 'dog', 'deer']
-const thumbnail = ['cat_100_50']
+const data: string[] = ['cat', 'dog', 'deer']
+const thumbnail: string[] = []
 export default {
   data,
   thumbnail,
