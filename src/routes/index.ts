@@ -8,7 +8,7 @@ const routes: Router = express.Router()
 routes.get(
   '/:name/:width/:height',
   [validParams, fileExists],
-  controllers.resize
+  controllers.handler
 )
 
 routes.use((req: Request, res: Response): void => {
