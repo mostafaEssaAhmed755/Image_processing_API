@@ -1,6 +1,6 @@
 # Placeholder
 
-This api is used to display animal images of different sizes and you can also specify these sizes
+My animal image API allows users to view images of animals in different sizes. Users can specify the size of the images they want to view, allowing for a customizable viewing experience. The API is designed to be fast and efficient, with optimized image retrieval mechanisms to ensure speedy delivery. Additionally, the API includes error handling and caching mechanisms to minimize downtime and ensure a smooth user experience.
 
 ## Installation & setup
 
